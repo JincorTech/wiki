@@ -1,0 +1,55 @@
+@startuml
+
+scale 1200*1200
+
+title
+  Beta Stage CI/CD
+end title
+
+autonumber 1
+
+actor Developer
+participant "GitHub" as GitHub
+participant "Travis/Codeship" as CICD
+participant "DockerHub" as DockerHub
+participant "DockerHub\nWebHook Listener" as DHWebhook
+participant "Docker Swarm" as DockerSwarm
+participant "Slack" as Slack
+
+box "Swarm Manager Node"
+  participant DHWebhook
+  participant DockerSwarm
+end box
+
+alt Pull request
+  Developer -> GitHub : To //develop// branch
+else Push new commit
+  Developer -> GitHub : To pull requested\n//develop// branch
+end
+
+GitHub -> CICD : Webhook
+
+CICD -> CICD : Build, tests,\netc.
+
+...minutes latter...
+
+alt CI passed
+  CICD -> DockerHub : Push builded image\nwith tag :stage
+
+  DockerHub -> DHWebhook : Webhook\nwith metadata
+
+  hnote over DHWebhook
+    Currently, list of
+    services allowed in
+    special config file.
+  endrnote
+
+  DHWebhook -> DockerSwarm : Update service image\nwith new image
+
+  DHWebhook -> Slack : Status notification\n(output of shell command)
+else failed
+  autonumber 5
+  CICD -> GitHub : Set failed status
+end
+
+@enduml

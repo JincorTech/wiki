@@ -1,0 +1,60 @@
+@startuml
+
+scale 2200*2200
+
+title
+  Send JCR transaction when verified successfully
+end title
+
+autonumber 1
+
+actor Browser
+participant "IngressSwarm\nLoad balancer" as StageBalancer
+participant "Proxy Nginx" as StageProxy
+participant "Wallets API" as StageWallets
+participant "Auth API" as StageAuth
+participant "Verify API" as StageVerify
+
+participant "Backend Contracts" as HLFBContracts
+participant "Fabric API" as HLFFabricApi
+participant "HLF Peers" as HLFBlockchain
+
+box "Beta Stage\nDocker Swarm"
+  participant StageBalancer
+  participant StageProxy
+  participant StageWallets
+  participant StageAuth
+  participant StageVerify
+end box
+
+box "HLF\nDocker Swarm"
+  participant HLFBContracts
+  participant HLFFabricApi
+  participant HLFBlockchain
+end box
+
+Browser -> StageBalancer : POST /wallets/tx/verify
+StageBalancer -> StageProxy : forward
+StageProxy -> StageWallets : POST /wallets/tx/verify
+StageWallets -> StageAuth : check token
+StageAuth -> StageWallets : success
+StageWallets -> StageVerify : check verify
+StageVerify -> StageAuth : check tenant token
+StageAuth -> StageVerify : success
+StageVerify -> StageWallets : success
+StageWallets -> HLFBContracts : call method
+
+HLFBContracts -> StageAuth : check token
+StageAuth -> HLFBContracts : success
+
+HLFBContracts -> HLFFabricApi : call evm chaincode
+HLFFabricApi -> HLFBlockchain : call evm chaincode
+
+HLFBlockchain -> HLFFabricApi : evm result
+HLFFabricApi -> HLFBContracts : evm result
+HLFBContracts -> StageWallets : formatted result
+StageWallets -> StageProxy : json result
+StageProxy -> StageBalancer : json result
+StageBalancer -> Browser : json result
+
+@enduml
