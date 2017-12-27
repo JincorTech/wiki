@@ -9,7 +9,7 @@ env:
   - GIT_SOURCE: _docpress
   - secure: ifpadzn8QwJ6GW4z5et572GZWB/1VGcej3HgXzK0Xu2202Al3gUgFKPoDb3hy4BqYxwrOsIXmgorA2f2eaWgRSdZSRFvC75DZqRyxI+hZeslbnjGdU57YbjIFS9/0bggpIdR2UuOlHcmKnWzDKsMrKGRYxfgVSzYGBMFjq16fkPTJvXCqOk1vxvMhmo8ovThCtXl9/wOWYNwojUzkrshucE2PIwOd1HCghrC9UN3lWVryvEWHJeJgU5ogl2EAD05g54k21JGie3sDnG7OAPkDHaessFtPteDU3p2S8YwKGbNpSaXFNPMVSbexnvEngDZ4yMJ6ZC2h9qQQ+DaFrcVMU4ixi6AoJm9svKAUlCkgUY/OIc1ckgp1EzsC04rlOg8Z/sfe5EqF2Oknaw/FRdCFo0LRJzkendIXhsX3/cP8Hq5V0w3wS7Sb7K/HOLD1SXEqhkvxrVMY57gDToUeUIlXjodk3HcPoMva7ZyxJNOpBNJcJIrzsHyJRGYyY3phJ2oEM8uEvkq3G96TGjOvWHZIhm46ML+Mspgmn4BKYgHjhh4oHLZWlKh766I8fCBUPiELJJF6Z3io3V0krLN7lY7ZoNL9kHAlsgauRqWf8gG+MZG560zMUJ9g51fHbuskVBCg7PFZiE364rd54LfJOrqoncVqaeH4Q9EpHadTTAQT8o=
 script:
-- yarn add docpress git-update-ghpages
+- yarn
 - yarn build
 after_success:
 - if [ "$TRAVIS_BRANCH" = "master" -a "$TRAVIS_PULL_REQUEST" = "false" ]; then ./node_modules/.bin/git-update-ghpages
