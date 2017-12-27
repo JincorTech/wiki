@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../assets/style.css?t=615badd5">
+    <script src="../assets/script.js?t=36f3d457"></script>
+    <title>About this doc - Jincor</title>
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body class="-menu-visible">
+    <div class="doc-layout">
+      <div class="toggle menu-toggle js-menu-toggle"></div>
+      <div class="menu toc-menu">
+        <li class="menu-item -level-0 -parent">
+          <ul class="submenu">
+            <li class="menu-item -level-1"><a class="link title  link-index" href="../index.html">Jincor</a>
+            </li>
+            <li class="menu-item -level-1 -parent"><a class="link title  link-frontend" href="../frontend/index.html">Frontend</a>
+              <ul class="submenu">
+                <li class="menu-item -level-2 -parent"><a class="link title  link-frontendwallets" href="../frontend/wallets/index.html">Wallets</a>
+                  <ul class="submenu">
+                    <li class="menu-item -level-3"><a class="link title  link-frontendwallets-2" href="../frontend/wallets/index.html">Deploy</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-frontendcontracts" href="../frontend/contracts/index.html">Contracts</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-frontendcompany" href="../frontend/company/index.html">Company</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-frontendmessenger" href="../frontend/messenger/index.html">Messenger</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-frontendlanding" href="../frontend/landing/index.html">Landing</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-frontendcontrib" href="../frontend/contrib/index.html">Contrib</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-frontenduikit" href="../frontend/uikit/index.html">UiKit</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-frontendemails" href="../frontend/emails/index.html">Emails</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><a class="link title  link-backend" href="../backend/index.html">Backend</a>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-backendcontracts" href="../backend/contracts/index.html">Contracts</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-backendicodashboard" href="../backend/icoDashboard/index.html">icoDashboard</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><a class="link title  link-blockchain" href="../blockchain/index.html">Blockchain</a>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-blockchainhyperledgerfabricapi" href="../blockchain/hyperledgerFabricApi/index.html">Hyperledger Fabric API</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1"><a class="link title -active link-docs" href="../docs/index.html">About this doc</a>
+              <ul class="headings heading-list">
+                <li class="heading-item -depth-2"><a class="hlink link-process" href="#process">Process</a>
+                </li>
+                <li class="heading-item -depth-2"><a class="hlink link-development" href="#development">Development</a>
+                </li>
+                <li class="heading-item -depth-2"><a class="hlink link-structure" href="#structure">Structure</a>
+                </li>
+                <li class="heading-item -depth-2"><a class="hlink link-travis-steps" href="#travis-steps">Travis steps</a>
+                </li>
+                <li class="heading-item -depth-2"><a class="hlink link-github-token" href="#github-token">Github token</a>
+                </li>
+                <li class="heading-item -depth-2"><a class="hlink link-dependencies-docs" href="#dependencies-docs">Dependencies docs</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </div>
+      <div class="body page-docs">
+        <div class="header-nav">
+          <div class="right">
+          </div>
+        </div>
+        <div class="markdown-body"><h1 id="jincor-docs">Jincor Docs</h1>
+<p><a href="https://travis-ci.com/JincorTech/wiki"><img src="https://travis-ci.com/JincorTech/wiki.svg?token=zhVTspsPSE9j1Tuwzqe2&amp;branch=master" alt="Build Status"></a></p>
+<p>This repo contains Jincor docs in markdown format.</p>
+<h2 id="process">Process</h2>
+<p>Create branch using Git Flow, then write some text and make pull request. Travis will build and deploy site from master branch automatically.</p>
+<h2 id="development">Development</h2>
+<p><em>Preferably use Yarn package manager</em></p>
+<ol>
+<li><code>yarn</code> - install deps</li>
+<li><code>yarn start</code> - run site in dev mode on <a href="http://localhost:3000">localhost:3000</a></li>
+<li><code>yarn build</code> - generate static to <code>_docpress</code> dir</li>
+</ol>
+<h2 id="structure">Structure</h2>
+<pre><code>README.md - main page
+docs/
+&#x251C;&#x2500;&#x2500; README.md - left-side navigation
+&#x251C;&#x2500;&#x2500; index.md - main backend page
+&#x251C;&#x2500;&#x2500; frontend/
+&#x251C;&#x2500;&#x2500; docs/
+&#x2502;   &#x2514;&#x2500;&#x2500; index.md - you are here
+&#x251C;&#x2500;&#x2500; backend/
+&#x2502;   &#x251C;&#x2500;&#x2500; %modulename%
+&#x2502;   &#x251C;&#x2500;&#x2500; index.md - module page
+&#x2502;   &#x251C;&#x2500;&#x2500; deploy.md
+&#x2502;   &#x2514;&#x2500;&#x2500; anotherpage.md
+&#x251C;&#x2500;&#x2500; blockchain/
+&#x2514;&#x2500;&#x2500; frontend/
+</code></pre>
+<h2 id="travis-steps">Travis steps</h2>
+<ol>
+<li><code>yarn</code> - install deps</li>
+<li><code>yarn build</code> - build app</li>
+<li><code>./node_modules/.bin/git-update-ghpages JincorTech/wiki docs -e GITHUB_TOKEN=&quot;yourghtoken&quot;</code> - deploy</li>
+</ol>
+<h2 id="github-token">Github token</h2>
+<p>Go to <a href="https://github.com/settings/tokens/new">github settings</a> and generate new token with <code>repo</code>, <code>user</code> and <code>gist</code> permissions.</p>
+<h2 id="dependencies-docs">Dependencies docs</h2>
+<ol>
+<li><a href="http://docpress.github.io/">docpress</a></li>
+<li><a href="https://github.com/rstacruz/git-update-ghpages">git-update-ghpages</a></li>
+</ol>
+
+        </div>
+        <div class="footer-nav">
+          <div class="left"><a href="../blockchain/hyperledgerFabricApi/index.html"><span class="title">Hyperledger Fabric API</span></a></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

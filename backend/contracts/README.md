@@ -1,3 +1,0 @@
-# Jincor Backend Contracts
-
-Todo

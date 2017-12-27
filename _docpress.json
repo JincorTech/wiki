@@ -1,0 +1,472 @@
+{
+  "toc": {
+    "sections": [
+      {
+        "title": "Jincor",
+        "source": "README.md",
+        "url": "index.html",
+        "slug": "index",
+        "headings": [
+          {
+            "title": "What's Jincor?",
+            "depth": 2,
+            "id": "what's-jincor"
+          },
+          {
+            "title": "APIs",
+            "depth": 2,
+            "id": "apis"
+          },
+          {
+            "title": "Services",
+            "depth": 2,
+            "id": "services"
+          },
+          {
+            "title": "Frontend apps",
+            "depth": 2,
+            "id": "frontend-apps"
+          },
+          {
+            "title": "Blockchain",
+            "depth": 2,
+            "id": "blockchain"
+          },
+          {
+            "title": "Libraries",
+            "depth": 2,
+            "id": "libraries",
+            "headings": [
+              {
+                "title": "Backend",
+                "depth": 3,
+                "id": "backend"
+              },
+              {
+                "title": "Frontend",
+                "depth": 3,
+                "id": "frontend"
+              }
+            ]
+          },
+          {
+            "title": "Structure overview",
+            "depth": 2,
+            "id": "structure-overview"
+          }
+        ]
+      },
+      {
+        "title": "Frontend",
+        "source": "docs/frontend/README.md",
+        "url": "frontend/index.html",
+        "slug": "frontend",
+        "sections": [
+          {
+            "title": "Wallets",
+            "source": "docs/frontend/wallets/README.md",
+            "url": "frontend/wallets/index.html",
+            "slug": "frontendwallets",
+            "sections": [
+              {
+                "title": "Deploy",
+                "source": "docs/frontend/wallets/README.md",
+                "url": "frontend/wallets/index.html",
+                "slug": "frontendwallets-2"
+              }
+            ]
+          },
+          {
+            "title": "Contracts",
+            "source": "docs/frontend/contracts/README.md",
+            "url": "frontend/contracts/index.html",
+            "slug": "frontendcontracts"
+          },
+          {
+            "title": "Company",
+            "source": "docs/frontend/company/README.md",
+            "url": "frontend/company/index.html",
+            "slug": "frontendcompany"
+          },
+          {
+            "title": "Messenger",
+            "source": "docs/frontend/messenger/README.md",
+            "url": "frontend/messenger/index.html",
+            "slug": "frontendmessenger"
+          },
+          {
+            "title": "Landing",
+            "source": "docs/frontend/landing/README.md",
+            "url": "frontend/landing/index.html",
+            "slug": "frontendlanding"
+          },
+          {
+            "title": "Contrib",
+            "source": "docs/frontend/contrib/README.md",
+            "url": "frontend/contrib/index.html",
+            "slug": "frontendcontrib"
+          },
+          {
+            "title": "UiKit",
+            "source": "docs/frontend/uikit/README.md",
+            "url": "frontend/uikit/index.html",
+            "slug": "frontenduikit"
+          },
+          {
+            "title": "Emails",
+            "source": "docs/frontend/emails/README.md",
+            "url": "frontend/emails/index.html",
+            "slug": "frontendemails"
+          }
+        ]
+      },
+      {
+        "title": "Backend",
+        "source": "docs/backend/README.md",
+        "url": "backend/index.html",
+        "slug": "backend",
+        "sections": [
+          {
+            "title": "Contracts",
+            "source": "docs/backend/contracts/README.md",
+            "url": "backend/contracts/index.html",
+            "slug": "backendcontracts"
+          },
+          {
+            "title": "icoDashboard",
+            "source": "docs/backend/icoDashboard/README.md",
+            "url": "backend/icoDashboard/index.html",
+            "slug": "backendicodashboard"
+          }
+        ]
+      },
+      {
+        "title": "Blockchain",
+        "source": "docs/blockchain/README.md",
+        "url": "blockchain/index.html",
+        "slug": "blockchain",
+        "sections": [
+          {
+            "title": "Hyperledger Fabric API",
+            "source": "docs/blockchain/hyperledgerFabricApi/README.md",
+            "url": "blockchain/hyperledgerFabricApi/index.html",
+            "slug": "blockchainhyperledgerfabricapi",
+            "headings": [
+              {
+                "title": "Pre-requests",
+                "depth": 2,
+                "id": "pre-requests"
+              },
+              {
+                "title": "Configuration",
+                "depth": 2,
+                "id": "configuration",
+                "headings": [
+                  {
+                    "title": "Environment",
+                    "depth": 3,
+                    "id": "environment"
+                  },
+                  {
+                    "title": "Credentials",
+                    "depth": 3,
+                    "id": "credentials"
+                  },
+                  {
+                    "title": "Network",
+                    "depth": 3,
+                    "id": "network"
+                  }
+                ]
+              },
+              {
+                "title": "Installation",
+                "depth": 2,
+                "id": "installation"
+              },
+              {
+                "title": "Run Tests",
+                "depth": 2,
+                "id": "run-tests"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "About this doc",
+        "source": "docs/docs/README.md",
+        "url": "docs/index.html",
+        "slug": "docs",
+        "headings": [
+          {
+            "title": "Process",
+            "depth": 2,
+            "id": "process"
+          },
+          {
+            "title": "Development",
+            "depth": 2,
+            "id": "development"
+          },
+          {
+            "title": "Structure",
+            "depth": 2,
+            "id": "structure"
+          },
+          {
+            "title": "Travis steps",
+            "depth": 2,
+            "id": "travis-steps"
+          },
+          {
+            "title": "Github token",
+            "depth": 2,
+            "id": "github-token"
+          },
+          {
+            "title": "Dependencies docs",
+            "depth": 2,
+            "id": "dependencies-docs"
+          }
+        ]
+      }
+    ]
+  },
+  "index": {
+    "index.html": {
+      "source": "README.md",
+      "title": "Jincor",
+      "pageTitle": "Jincor",
+      "slug": "index",
+      "headings": [
+        {
+          "title": "What's Jincor?",
+          "depth": 2,
+          "id": "what's-jincor"
+        },
+        {
+          "title": "APIs",
+          "depth": 2,
+          "id": "apis"
+        },
+        {
+          "title": "Services",
+          "depth": 2,
+          "id": "services"
+        },
+        {
+          "title": "Frontend apps",
+          "depth": 2,
+          "id": "frontend-apps"
+        },
+        {
+          "title": "Blockchain",
+          "depth": 2,
+          "id": "blockchain"
+        },
+        {
+          "title": "Libraries",
+          "depth": 2,
+          "id": "libraries",
+          "headings": [
+            {
+              "title": "Backend",
+              "depth": 3,
+              "id": "backend"
+            },
+            {
+              "title": "Frontend",
+              "depth": 3,
+              "id": "frontend"
+            }
+          ]
+        },
+        {
+          "title": "Structure overview",
+          "depth": 2,
+          "id": "structure-overview"
+        }
+      ]
+    },
+    "frontend/index.html": {
+      "source": "docs/frontend/README.md",
+      "title": "Frontend - Jincor",
+      "pageTitle": "Frontend",
+      "slug": "frontend"
+    },
+    "frontend/wallets/index.html": {
+      "source": "docs/frontend/wallets/README.md",
+      "title": "Deploy - Jincor",
+      "pageTitle": "Deploy",
+      "slug": "frontendwallets-2"
+    },
+    "frontend/contracts/index.html": {
+      "source": "docs/frontend/contracts/README.md",
+      "title": "Contracts - Jincor",
+      "pageTitle": "Contracts",
+      "slug": "frontendcontracts"
+    },
+    "frontend/company/index.html": {
+      "source": "docs/frontend/company/README.md",
+      "title": "Company - Jincor",
+      "pageTitle": "Company",
+      "slug": "frontendcompany"
+    },
+    "frontend/messenger/index.html": {
+      "source": "docs/frontend/messenger/README.md",
+      "title": "Messenger - Jincor",
+      "pageTitle": "Messenger",
+      "slug": "frontendmessenger"
+    },
+    "frontend/landing/index.html": {
+      "source": "docs/frontend/landing/README.md",
+      "title": "Landing - Jincor",
+      "pageTitle": "Landing",
+      "slug": "frontendlanding"
+    },
+    "frontend/contrib/index.html": {
+      "source": "docs/frontend/contrib/README.md",
+      "title": "Contrib - Jincor",
+      "pageTitle": "Contrib",
+      "slug": "frontendcontrib"
+    },
+    "frontend/uikit/index.html": {
+      "source": "docs/frontend/uikit/README.md",
+      "title": "UiKit - Jincor",
+      "pageTitle": "UiKit",
+      "slug": "frontenduikit"
+    },
+    "frontend/emails/index.html": {
+      "source": "docs/frontend/emails/README.md",
+      "title": "Emails - Jincor",
+      "pageTitle": "Emails",
+      "slug": "frontendemails"
+    },
+    "backend/index.html": {
+      "source": "docs/backend/README.md",
+      "title": "Backend - Jincor",
+      "pageTitle": "Backend",
+      "slug": "backend"
+    },
+    "backend/contracts/index.html": {
+      "source": "docs/backend/contracts/README.md",
+      "title": "Contracts - Jincor",
+      "pageTitle": "Contracts",
+      "slug": "backendcontracts"
+    },
+    "backend/icoDashboard/index.html": {
+      "source": "docs/backend/icoDashboard/README.md",
+      "title": "icoDashboard - Jincor",
+      "pageTitle": "icoDashboard",
+      "slug": "backendicodashboard"
+    },
+    "blockchain/index.html": {
+      "source": "docs/blockchain/README.md",
+      "title": "Blockchain - Jincor",
+      "pageTitle": "Blockchain",
+      "slug": "blockchain"
+    },
+    "blockchain/hyperledgerFabricApi/index.html": {
+      "source": "docs/blockchain/hyperledgerFabricApi/README.md",
+      "title": "Hyperledger Fabric API - Jincor",
+      "pageTitle": "Hyperledger Fabric API",
+      "slug": "blockchainhyperledgerfabricapi",
+      "headings": [
+        {
+          "title": "Pre-requests",
+          "depth": 2,
+          "id": "pre-requests"
+        },
+        {
+          "title": "Configuration",
+          "depth": 2,
+          "id": "configuration",
+          "headings": [
+            {
+              "title": "Environment",
+              "depth": 3,
+              "id": "environment"
+            },
+            {
+              "title": "Credentials",
+              "depth": 3,
+              "id": "credentials"
+            },
+            {
+              "title": "Network",
+              "depth": 3,
+              "id": "network"
+            }
+          ]
+        },
+        {
+          "title": "Installation",
+          "depth": 2,
+          "id": "installation"
+        },
+        {
+          "title": "Run Tests",
+          "depth": 2,
+          "id": "run-tests"
+        }
+      ]
+    },
+    "docs/index.html": {
+      "source": "docs/docs/README.md",
+      "title": "About this doc - Jincor",
+      "pageTitle": "About this doc",
+      "slug": "docs",
+      "headings": [
+        {
+          "title": "Process",
+          "depth": 2,
+          "id": "process"
+        },
+        {
+          "title": "Development",
+          "depth": 2,
+          "id": "development"
+        },
+        {
+          "title": "Structure",
+          "depth": 2,
+          "id": "structure"
+        },
+        {
+          "title": "Travis steps",
+          "depth": 2,
+          "id": "travis-steps"
+        },
+        {
+          "title": "Github token",
+          "depth": 2,
+          "id": "github-token"
+        },
+        {
+          "title": "Dependencies docs",
+          "depth": 2,
+          "id": "dependencies-docs"
+        }
+      ]
+    }
+  },
+  "sources": {
+    "README.md": "index.html",
+    "docs/frontend/README.md": "frontend/index.html",
+    "docs/frontend/wallets/README.md": "frontend/wallets/index.html",
+    "docs/frontend/contracts/README.md": "frontend/contracts/index.html",
+    "docs/frontend/company/README.md": "frontend/company/index.html",
+    "docs/frontend/messenger/README.md": "frontend/messenger/index.html",
+    "docs/frontend/landing/README.md": "frontend/landing/index.html",
+    "docs/frontend/contrib/README.md": "frontend/contrib/index.html",
+    "docs/frontend/uikit/README.md": "frontend/uikit/index.html",
+    "docs/frontend/emails/README.md": "frontend/emails/index.html",
+    "docs/backend/README.md": "backend/index.html",
+    "docs/backend/contracts/README.md": "backend/contracts/index.html",
+    "docs/backend/icoDashboard/README.md": "backend/icoDashboard/index.html",
+    "docs/blockchain/README.md": "blockchain/index.html",
+    "docs/blockchain/hyperledgerFabricApi/README.md": "blockchain/hyperledgerFabricApi/index.html",
+    "docs/docs/README.md": "docs/index.html"
+  }
+}

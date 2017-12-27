@@ -1,2 +1,0 @@
-Frontend Wallets index MD
-================
