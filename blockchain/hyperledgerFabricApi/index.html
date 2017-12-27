@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../assets/style.css?t=615badd5">
+    <script src="../../assets/script.js?t=36f3d457"></script>
+    <title>Hyperledger Fabric API - Jincor</title>
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body class="-menu-visible">
+    <div class="doc-layout">
+      <div class="toggle menu-toggle js-menu-toggle"></div>
+      <div class="menu toc-menu">
+        <li class="menu-item -level-0 -parent">
+          <ul class="submenu">
+            <li class="menu-item -level-1"><a class="link title  link-index" href="../../index.html">Jincor</a>
+            </li>
+            <li class="menu-item -level-1 -parent"><a class="link title  link-frontend" href="../../frontend/index.html">Frontend</a>
+              <ul class="submenu">
+                <li class="menu-item -level-2 -parent"><a class="link title  link-frontendwallets" href="../../frontend/wallets/index.html">Wallets</a>
+                  <ul class="submenu">
+                    <li class="menu-item -level-3"><a class="link title  link-frontendwalletsdeploy" href="../../frontend/wallets/deploy.html">Deploy</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-frontendcontracts" href="../../frontend/contracts/index.html">Contracts</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-frontendcompany" href="../../frontend/company/index.html">Company</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-frontendmessenger" href="../../frontend/messenger/index.html">Messenger</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-frontendlanding" href="../../frontend/landing/index.html">Landing</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-frontendcontrib" href="../../frontend/contrib/index.html">Contrib</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-frontenduikit" href="../../frontend/uikit/index.html">UiKit</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-frontendemails" href="../../frontend/emails/index.html">Emails</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><a class="link title  link-backend" href="../../backend/index.html">Backend</a>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-backendcontracts" href="../../backend/contracts/index.html">Contracts</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-backendicodashboard" href="../../backend/icoDashboard/index.html">icoDashboard</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><a class="link title  link-blockchain" href="../../blockchain/index.html">Blockchain</a>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title -active link-blockchainhyperledgerfabricapi" href="../../blockchain/hyperledgerFabricApi/index.html">Hyperledger Fabric API</a>
+                  <ul class="headings heading-list">
+                    <li class="heading-item -depth-2"><a class="hlink link-pre-requests" href="#pre-requests">Pre-requests</a>
+                    </li>
+                    <li class="heading-item -depth-2"><a class="hlink link-configuration" href="#configuration">Configuration</a>
+                      <ul class="heading-list -depth-2">
+                        <li class="heading-item -depth-3"><a class="hlink link-environment" href="#environment">Environment</a>
+                        </li>
+                        <li class="heading-item -depth-3"><a class="hlink link-credentials" href="#credentials">Credentials</a>
+                        </li>
+                        <li class="heading-item -depth-3"><a class="hlink link-network" href="#network">Network</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="heading-item -depth-2"><a class="hlink link-installation" href="#installation">Installation</a>
+                    </li>
+                    <li class="heading-item -depth-2"><a class="hlink link-run-tests" href="#run-tests">Run Tests</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </div>
+      <div class="body page-blockchainhyperledgerfabricapi">
+        <div class="header-nav">
+          <div class="right">
+          </div>
+        </div>
+        <div class="markdown-body"><h1 id="jincor-hyperledger-fabric-api">Jincor Hyperledger Fabric Api</h1>
+<p><img src="https://travis-ci.org/JincorTech/hyperledger-fabricapi.svg?branch=master" alt=""></p>
+<p>This is the internal service provided a REST like API for a Hyperledger Fabric network (HLF).
+In order to access the HLF blockchain by using any other application services should use this service.</p>
+<p>Main features are:</p>
+<ol>
+<li>Work with certificates and private keys.</li>
+<li>Deploy &amp; Upgrade a chaincode.</li>
+<li>Invoke &amp; Query a chaincode.</li>
+</ol>
+<h2 id="pre-requests">Pre-requests</h2>
+<ol>
+<li>install <code>docker</code>.</li>
+<li>deployed <code>hyperledger fabric network</code>.</li>
+<li>mount local <code>crypto-config</code> to a container.</li>
+</ol>
+<p><em>Preferred Linux environment</em>.</p>
+<h2 id="configuration">Configuration</h2>
+<h3 id="environment">Environment</h3>
+<ul>
+<li><em>FABRICAPI_LOGGING_LEVEL</em> log level (verbose, info, warning, error)</li>
+<li><em>FABRICAPI_LOGGING_FORMAT</em> log format (text, json)</li>
+<li><em>FABRICAPI_LOGGING_COLORIZE</em> colorize output (true, false)</li>
+<li><em>FABRICAPI_SERVER_HTTP</em> HTTP server (true, false)</li>
+<li><em>FABRICAPI_SERVER_HTTP_IP</em> bind ip</li>
+<li><em>FABRICAPI_SERVER_HTTP_PORT</em> listen port</li>
+<li><em>FABRICAPI_SERVER_HTTPS</em> HTTPS server (true, false)</li>
+<li><em>FABRICAPI_SERVER_HTTPS_IP</em> https bind ip</li>
+<li><em>FABRICAPI_SERVER_HTTPS_PORT</em> https port</li>
+<li><em>FABRICAPI_SERVER_HTTPS_PUB_KEY</em> path to cert. file</li>
+<li><em>FABRICAPI_SERVER_HTTPS_PRIV_KEY</em> path to private key file</li>
+<li><em>FABRICAPI_SERVER_HTTPS_CA</em> path to root CA cert. file</li>
+<li><em>FABRICAPI_NETWORK_FILEPATH</em> path to a file contains fabric network description</li>
+<li><em>FABRICAPI_JWT_SECRET</em> secret for jwt</li>
+<li><em>FABRICAPI_JWT_SIGN_TYPE</em> signing algorithm type (HS256)</li>
+<li><em>FABRICAPI_JWT_EXPIRES_DURATION</em> jwt lifetime (2 days, 10 days)</li>
+<li><em>FABRICAPI_IDENTIFY_FILE</em> path to a file contains service users</li>
+<li><em>FABRICAPI_IDENTIFY_SECRET</em> secret for password hashes</li>
+</ul>
+<h3 id="credentials">Credentials</h3>
+<p>File credential.json should contains user records like:</p>
+<pre><code>  &quot;username&quot;: {
+    &quot;password&quot;: hmac(FABRICAPI_IDENTIFY_SECRET + username, *PASSWORD*)
+    &quot;mspId&quot;: MspIdentify
+    &quot;role&quot;: admin|user
+    &quot;networkConfigFile&quot;: path to network-config.yaml
+  },
+</code></pre>
+<h3 id="network">Network</h3>
+<p>File network-config.yaml contains description of a hyperledger fabric network.
+Fix all paths by properly paths of your crypto-config. For more details see <a href="http://hyperledger-fabric.readthedocs.io/en/latest/build_network.html">Hyperledger Fabric documentaion</a>.</p>
+<h2 id="installation">Installation</h2>
+<ol>
+<li>Copy &amp; fix: <code>.env.template</code> -&gt; <code>.env</code>, <code>credentials.json.template</code> -&gt; <code>credentials.json</code>, <code>network-config.yaml.template</code> -&gt; <code>network-config.yaml</code></li>
+<li>Build docker image</li>
+<li>Run docker container, and don&apos;t forget to mount crypto-config.</li>
+</ol>
+<h2 id="run-tests">Run Tests</h2>
+<p>Todo</p>
+
+        </div>
+        <div class="footer-nav">
+          <div class="left"><a href="../../blockchain/index.html"><span class="title">Blockchain</span></a></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
