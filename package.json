@@ -1,0 +1,16 @@
+{
+  "name": "jincor-docs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Amazing-Space-Invader/testdoc.git",
+  "author": "Aidar Ibatullin <amazing.space.invader@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "./node_modules/docpress/bin/docpress s",
+    "build": "./node_modules/docpress/bin/docpress build"
+  },
+  "dependencies": {
+    "docpress": "^0.7.1",
+    "git-update-ghpages": "^1.3.0"
+  }
+}

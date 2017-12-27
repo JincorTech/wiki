@@ -1,0 +1,16 @@
+language: node_js
+node_js:
+- 4
+env:
+  global:
+  - GIT_NAME: JincorTech
+  - GIT_EMAIL: tech@jincor.com
+  - GITHUB_REPO: JincorTech/wiki
+  - GIT_SOURCE: _docpress
+  - secure: iwu53lTuAoOPd6CovMbQ61QASpGSd2F6XO7KsE2ORi8m8vq8mm7EyzYG8yoXGmN4UdqcqP/llRPPD/ihp+cTW58Jso4rJL6gz+Ie74nB41awWZZvjJFuu01Rjj6XvkwyTGMBM88yfUZIdDFPrliXvq3Eu1sCFz9nbLJ1aQoxXLYWSh/5ZqDyRSWsuzIbqBwdmfz/q0Yi1J5Ed2EVNG014/VnOdVAh52C9swGL8J3/7x1HYWp3Hohg61w9eK1DFBHSzVc60Ne5XoAZKgvx5N4/zqQC4u0GZp06N0KolBGZotCtNZFtzwpbZLdObxIo9ZiarTT4tVlf58HFljJmTFaKi0ii05d05w1iTKDjAdGGt4y8G45YuxB69c5tkKTLCEpNFn+ri0bFKpvHds4K7RmEKlVHoExTg6gn1jjh59PxYaXnfjMHqFGk7FsoEau2dNy5GIstKQ0zGR69CdcJc8jbsXT+A78Ui24JRMZWEOqS8EcNPKAwINYAPbVEv0HZfjJpq3nvPwA2Hs2uBqtDXo6WeSf8dq8vsS59r+d9xFFkP/oYWfXQaxsQI1Bd+gJacu01EE8rvC8Kup+lw7oxoLuGYYzPjvJxPHh8ZZ6iiZctwWeVEu/9zoWwuyqgsJ8umNHiM1L6qoEAUXEaQN5xwogEe5jr8OeQ5nIfpE62KtDINk=
+script:
+- yarn add docpress git-update-ghpages
+- yarn build
+after_success:
+- if [ "$TRAVIS_BRANCH" = "master" -a "$TRAVIS_PULL_REQUEST" = "false" ]; then ./node_modules/.bin/git-update-ghpages
+  -e; fi
