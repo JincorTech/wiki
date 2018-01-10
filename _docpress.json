@@ -80,19 +80,120 @@
             "title": "Contracts",
             "source": "docs/frontend/contracts/README.md",
             "url": "frontend/contracts/index.html",
-            "slug": "frontendcontracts"
+            "slug": "frontendcontracts",
+            "headings": [
+              {
+                "title": "Jincor Frontend Contracts",
+                "depth": 2,
+                "id": "jincor-frontend-contracts"
+              },
+              {
+                "title": "Description",
+                "depth": 2,
+                "id": "description"
+              },
+              {
+                "title": "Build & Run",
+                "depth": 2,
+                "id": "build-and-run"
+              },
+              {
+                "title": "Configuration",
+                "depth": 2,
+                "id": "configuration"
+              },
+              {
+                "title": "Use api mocks",
+                "depth": 2,
+                "id": "use-api-mocks"
+              },
+              {
+                "title": "Tools & libraries",
+                "depth": 2,
+                "id": "tools-and-libraries"
+              },
+              {
+                "title": "Structure",
+                "depth": 2,
+                "id": "structure"
+              },
+              {
+                "title": "Refactoring",
+                "depth": 2,
+                "id": "refactoring"
+              }
+            ]
           },
           {
             "title": "Company",
             "source": "docs/frontend/company/README.md",
             "url": "frontend/company/index.html",
-            "slug": "frontendcompany"
+            "slug": "frontendcompany",
+            "headings": [
+              {
+                "title": "Description",
+                "depth": 2,
+                "id": "description"
+              },
+              {
+                "title": "Build & Run",
+                "depth": 2,
+                "id": "build-and-run"
+              },
+              {
+                "title": "Configuration",
+                "depth": 2,
+                "id": "configuration"
+              },
+              {
+                "title": "Tools & libraries",
+                "depth": 2,
+                "id": "tools-and-libraries"
+              },
+              {
+                "title": "Structure",
+                "depth": 2,
+                "id": "structure"
+              }
+            ]
           },
           {
             "title": "Messenger",
             "source": "docs/frontend/messenger/README.md",
             "url": "frontend/messenger/index.html",
-            "slug": "frontendmessenger"
+            "slug": "frontendmessenger",
+            "headings": [
+              {
+                "title": "Description",
+                "depth": 2,
+                "id": "description"
+              },
+              {
+                "title": "Build & Run",
+                "depth": 2,
+                "id": "build-and-run"
+              },
+              {
+                "title": "Configuration",
+                "depth": 2,
+                "id": "configuration"
+              },
+              {
+                "title": "Tools & libraries",
+                "depth": 2,
+                "id": "tools-and-libraries"
+              },
+              {
+                "title": "Structure",
+                "depth": 2,
+                "id": "structure"
+              },
+              {
+                "title": "Matrix SDK",
+                "depth": 2,
+                "id": "matrix-sdk"
+              }
+            ]
           },
           {
             "title": "Landing",
@@ -305,19 +406,120 @@
       "source": "docs/frontend/contracts/README.md",
       "title": "Contracts - Jincor",
       "pageTitle": "Contracts",
-      "slug": "frontendcontracts"
+      "slug": "frontendcontracts",
+      "headings": [
+        {
+          "title": "Jincor Frontend Contracts",
+          "depth": 2,
+          "id": "jincor-frontend-contracts"
+        },
+        {
+          "title": "Description",
+          "depth": 2,
+          "id": "description"
+        },
+        {
+          "title": "Build & Run",
+          "depth": 2,
+          "id": "build-and-run"
+        },
+        {
+          "title": "Configuration",
+          "depth": 2,
+          "id": "configuration"
+        },
+        {
+          "title": "Use api mocks",
+          "depth": 2,
+          "id": "use-api-mocks"
+        },
+        {
+          "title": "Tools & libraries",
+          "depth": 2,
+          "id": "tools-and-libraries"
+        },
+        {
+          "title": "Structure",
+          "depth": 2,
+          "id": "structure"
+        },
+        {
+          "title": "Refactoring",
+          "depth": 2,
+          "id": "refactoring"
+        }
+      ]
     },
     "frontend/company/index.html": {
       "source": "docs/frontend/company/README.md",
       "title": "Company - Jincor",
       "pageTitle": "Company",
-      "slug": "frontendcompany"
+      "slug": "frontendcompany",
+      "headings": [
+        {
+          "title": "Description",
+          "depth": 2,
+          "id": "description"
+        },
+        {
+          "title": "Build & Run",
+          "depth": 2,
+          "id": "build-and-run"
+        },
+        {
+          "title": "Configuration",
+          "depth": 2,
+          "id": "configuration"
+        },
+        {
+          "title": "Tools & libraries",
+          "depth": 2,
+          "id": "tools-and-libraries"
+        },
+        {
+          "title": "Structure",
+          "depth": 2,
+          "id": "structure"
+        }
+      ]
     },
     "frontend/messenger/index.html": {
       "source": "docs/frontend/messenger/README.md",
       "title": "Messenger - Jincor",
       "pageTitle": "Messenger",
-      "slug": "frontendmessenger"
+      "slug": "frontendmessenger",
+      "headings": [
+        {
+          "title": "Description",
+          "depth": 2,
+          "id": "description"
+        },
+        {
+          "title": "Build & Run",
+          "depth": 2,
+          "id": "build-and-run"
+        },
+        {
+          "title": "Configuration",
+          "depth": 2,
+          "id": "configuration"
+        },
+        {
+          "title": "Tools & libraries",
+          "depth": 2,
+          "id": "tools-and-libraries"
+        },
+        {
+          "title": "Structure",
+          "depth": 2,
+          "id": "structure"
+        },
+        {
+          "title": "Matrix SDK",
+          "depth": 2,
+          "id": "matrix-sdk"
+        }
+      ]
     },
     "frontend/landing/index.html": {
       "source": "docs/frontend/landing/README.md",

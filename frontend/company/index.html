@@ -26,6 +26,18 @@
                 <li class="menu-item -level-2"><a class="link title  link-frontendcontracts" href="../../frontend/contracts/index.html">Contracts</a>
                 </li>
                 <li class="menu-item -level-2"><a class="link title -active link-frontendcompany" href="../../frontend/company/index.html">Company</a>
+                  <ul class="headings heading-list">
+                    <li class="heading-item -depth-2"><a class="hlink link-description" href="#description">Description</a>
+                    </li>
+                    <li class="heading-item -depth-2"><a class="hlink link-build-and-run" href="#build-and-run">Build &amp; Run</a>
+                    </li>
+                    <li class="heading-item -depth-2"><a class="hlink link-configuration" href="#configuration">Configuration</a>
+                    </li>
+                    <li class="heading-item -depth-2"><a class="hlink link-tools-and-libraries" href="#tools-and-libraries">Tools &amp; libraries</a>
+                    </li>
+                    <li class="heading-item -depth-2"><a class="hlink link-structure" href="#structure">Structure</a>
+                    </li>
+                  </ul>
                 </li>
                 <li class="menu-item -level-2"><a class="link title  link-frontendmessenger" href="../../frontend/messenger/index.html">Messenger</a>
                 </li>
@@ -63,7 +75,89 @@
           <div class="right">
           </div>
         </div>
-        <div class="markdown-body"><h1 id="frontend-company-index-md">Frontend Company index MD</h1>
+        <div class="markdown-body"><h1 id="jincor-frontend-company">Jincor Frontend Company</h1>
+<p><a href="https://travis-ci.com/JincorTech/frontend-company"><img src="https://travis-ci.com/JincorTech/frontend-company.svg?token=zhVTspsPSE9j1Tuwzqe2&amp;branch=develop" alt="Build Status"></a></p>
+<hr>
+<h2 id="description">Description</h2>
+<p>This frontend application can help user to solve these tasks:</p>
+<ul>
+<li>Register new user profile</li>
+<li>Watch employee profile details</li>
+<li>Edit self profile details</li>
+<li>Register new company</li>
+<li>Watch company details</li>
+<li>Edit company card if user is admin</li>
+<li>Search employees by them name and email addresses</li>
+<li>Invite new employees to his company</li>
+<li>Accept invitations from other companies</li>
+</ul>
+<h2 id="build-and-run">Build &amp; Run</h2>
+<ol>
+<li>
+<p>Install <a href="http://git-scm.com/">Git</a> and <a href="http://nodejs.org/">Node</a>.</p>
+</li>
+<li>
+<p>Open your terminal and clone <code>JincorTech/frontend-company</code> by running:</p>
+</li>
+</ol>
+<pre><code>```
+$ git clone git@github.com:JincorTech/frontend-company.git
+```
+</code></pre>
+<ol start="3">
+<li>Now go to the project&apos;s folder:</li>
+</ol>
+<pre><code>```
+$ cd frontend-company
+```
+</code></pre>
+<ol start="4">
+<li>Install dependencies:</li>
+</ol>
+<pre><code>```
+$ npm install
+```
+</code></pre>
+<ol start="5">
+<li>Start in development mode:</li>
+</ol>
+<pre><code>```
+$ npm start
+```
+</code></pre>
+<p>To build the project in production mode:
+<code>$ npm run build</code></p>
+<h2 id="configuration">Configuration</h2>
+<p>To connect to the host you need to pass further NodeJS environment variables:</p>
+<p>API_HOST - path to the companies api host.</p>
+<p>API_PREFIX - api prefix for companies api (for example &apos;/api/v1&apos;)</p>
+<h2 id="tools-and-libraries">Tools &amp; libraries</h2>
+<p>The project have these libraries as the base:</p>
+<ol>
+<li><a href="https://github.com/facebook/react/">React</a></li>
+<li><a href="https://github.com/reactjs/redux">Redux</a></li>
+<li><a href="https://github.com/reactjs/react-redux">React-redux</a></li>
+<li><a href="https://github.com/redux-saga/redux-saga">Redux-saga</a></li>
+<li><a href="https://github.com/gajus/react-css-modules">react-css-modules</a></li>
+<li><a href="https://github.com/rtfeldman/seamless-immutable">seamless-immutable</a></li>
+<li><a href="https://github.com/i18next/i18next">i18next</a></li>
+<li><a href="https://github.com/Microsoft/TypeScript">TypeScript</a></li>
+</ol>
+<h2 id="structure">Structure</h2>
+<p>The project&apos;s /src/ directory contains these parts:</p>
+<ul>
+<li>/assets/ - stores static content</li>
+<li>/components/ - react presentational components without logic</li>
+<li>/containers/ - react container components that have a connection to the store and can dispatch actions</li>
+<li>/helpers/ - helpers that can help to solve different kinds of tasks grouped by they purpose</li>
+<li>/i18n/ - set up i18n configuration</li>
+<li>/locales/ - static files with translations grouped by locales and sections of the application</li>
+<li>/redux/ - reducers and store configuration</li>
+<li>/sagas/ - redux sagas grouped by section of the store and root saga</li>
+<li>/utils/ - utilities for different tasks such as creating actions, validators etc.</li>
+</ul>
+<hr>
+<p><a href="https://github.com/JincorTech">Jincor Tech</a></p>
 
         </div>
         <div class="footer-nav">
